@@ -1,0 +1,40 @@
+@import '../../../styles'
+	
+.default-container
+	height: 70px
+
+.default-content
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.title
+	font-size: $font-03
+	font-weight: 600
+	color: $theme-02
+	cursor: pointer
+
+.menu-icon
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 30px
+	height: 30px
+	cursor: pointer
+
+.desktop-menu
+	display: none
+
+@media (min-width: 1200px)
+	.menu-icon
+		display: none
+
+	.desktop-menu
+		display: flex
+		justify-content: space-between
+		gap: 70px
+
+	.option
+		font-size: $font-03
+		cursor: pointer
+
