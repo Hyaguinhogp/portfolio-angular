@@ -1,7 +1,12 @@
-$url-image: url('../../../assets/mobile-bg.png')
+$mobile-bg: url('../../../assets/mobile-bg.png')
+$desktop-bg: url('../../../assets/desktop-bg.png')
 	
 .home-bg
 	min-height: 100vh
-	background-image: $url-image
+	background-image: $mobile-bg
 	background-repeat: no-repeat
 	background-size: cover
+
+@media (min-width: 1200px)
+	.home-bg
+		background-image: $desktop-bg

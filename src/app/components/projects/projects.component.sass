@@ -1,0 +1,26 @@
+@import '../../../styles'
+
+.default-container
+	padding-top: 60px
+	padding-bottom: 60px
+
+.default-content
+	display: flex
+	flex-direction: column
+	gap: 20px
+
+.title
+	font-size: $font-02
+	font-weight: 800
+	color: $theme-02
+
+.projects-container
+	display: flex
+	flex-direction: column
+	gap: 60px
+
+@media (min-width: 1200px)
+	.projects-container
+		display: grid
+		grid-template-columns: auto auto auto
+		column-gap: 20px

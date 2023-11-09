@@ -8,6 +8,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { SvgProviderComponent } from './components/svg-provider/svg-provider.component';
+import { StacksComponent } from './components/stacks/stacks.component';
+import { StackComponent } from './components/stack/stack.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { SvgProviderComponent } from './components/svg-provider/svg-provider.com
     HomePageComponent,
     HeaderComponent,
     PresentationComponent,
-    SvgProviderComponent
+    SvgProviderComponent,
+    StacksComponent,
+    StackComponent,
+    ProjectsComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

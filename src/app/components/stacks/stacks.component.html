@@ -1,0 +1,26 @@
+<div class="default-container">
+	<div class="default-content">
+		<div class="title-container">
+			<h2 class="title">STACKS</h2>
+		</div>
+		<div class="info-container">
+			<ul class="stacks-container">
+				<li *ngFor="let stack of stacks">
+					<app-stack [stackObject]="stack" />
+				</li>
+			</ul>
+
+			<div class="personal-summary__container">
+				<h2 class="highlight">Personal Summary</h2>
+
+				<p>
+					My <span class="highlight">web development</span> journey was completed at Kenzie Academy Brazil,
+					where I learned current <span class="highlight">industrybest practices and technologies</span>.
+					Additionally, I worked on numerous complex group projects employing
+					agile methodologies like SCRUM. With <span class="highlight">over 3 years of software development					experience</span>, I possess the
+					ability to quickly grasp and implement libraries and frameworks.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

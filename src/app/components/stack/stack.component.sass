@@ -1,0 +1,40 @@
+@import '../../../styles'
+
+.stack-container
+	display: flex
+	justify-content: center
+	align-items: center
+	width: calc((var(--column-width) * 2) + var(--space-width))
+	height: calc((var(--column-width) * 2) + var(--space-width))
+	
+.stack-icon
+	display: flex
+	background-color: $gray-02
+	width: 100%
+	cursor: pointer
+
+.stack-icon:hover
+	background-color: $gray-01
+
+.stack-name__container
+	position: absolute
+	display: flex
+	background-color: white
+	padding: 10px 15px
+	border-radius: 5px
+	z-index: 5
+	animation: nameAnimation 0.2s linear
+	transform: translateY(-200%)
+
+.stack-name
+	color: $theme-00
+
+@keyframes nameAnimation
+	0%
+		transform: translateY(15%)
+	100%
+		transform: translateY(-200%)
+
+
+@media (min-width: 1200px)
+		

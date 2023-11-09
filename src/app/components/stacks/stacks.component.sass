@@ -1,0 +1,53 @@
+@import '../../../styles'
+
+.default-container
+	padding-top: 60px
+	padding-bottom: 60px
+
+.default-content
+	display: flex
+	flex-direction: column
+	gap: 20px
+
+.title
+	font-size: $font-02
+	font-weight: 800
+	color:$theme-02
+
+.info-container
+	display: flex
+	flex-direction: column
+	gap: 60px
+	
+.stacks-container
+	display: grid
+	width: 100%
+	grid-template-columns: auto auto auto
+	column-gap: 20px
+	row-gap: 20px
+
+.personal-summary__container
+	display: flex
+	flex-direction: column
+	height: fit-content
+	gap: 10px
+	border-radius: 15px
+	padding: 25px 20px
+	background-color: #FFF1
+
+	h2
+		font-size: $font-03
+		font-weight: 600
+
+	p
+		font-weight: 300
+		line-height: 26px
+
+@media (min-width: 1200px)
+	.info-container
+		flex-direction: row
+		justify-content: space-between
+
+	.stacks-container
+		width: fit-content
+		grid-template-columns: auto auto auto auto
