@@ -1,6 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'app-svg-provider',
@@ -8,18 +6,11 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./svg-provider.component.sass']
 })
 export class SvgProviderComponent {
-  @Input() svgPath: string = '';
-  public svgContent: SafeHtml = {} as SafeHtml;
+  @HostBinding('style.-webkit-mask-image')
+  private _path!: string;
 
-  constructor(private http: HttpClient, private sanitizer: DomSanitizer) {}
-
-  ngOnInit() {
-    if(this.svgPath) {
-      this.http.get('../../../assets/' + this.svgPath + '.svg', { responseType: 'text' })
-        .subscribe(data => {
-          this.svgContent = this.sanitizer.bypassSecurityTrustHtml(data);
-        })
-    }
+  @Input()
+  public set path(filePath: string) {
+    this._path = `url("${filePath}")`;
   }
-
 }

@@ -33,6 +33,15 @@ $url-image: url('../../../assets/presentation-image.png')
 	border-radius: 50px
 	background-color: $theme-01
 
+.social
+	width: 30px
+	height: 30px
+	background-color: $theme-02
+	cursor: pointer
+
+.social:hover
+	background-color: $theme-03
+
 .text-container
 	display: flex
 	flex-direction: column
@@ -44,9 +53,6 @@ $url-image: url('../../../assets/presentation-image.png')
 	font-weight: 800
 	text-align: center
 
-.highlight
-	color: $theme-02
-
 .presentation-button
 	padding: 10px 20px
 	background: none
@@ -54,6 +60,11 @@ $url-image: url('../../../assets/presentation-image.png')
 	font-size: $font-03
 	border: 2px solid $theme-02
 	border-radius: 40px
+	cursor: pointer
+
+.presentation-button:hover
+	background-color: $theme-02
+	color: $theme-00
 
 @media (min-width: 1200px)
 	.default-content
@@ -67,6 +78,10 @@ $url-image: url('../../../assets/presentation-image.png')
 	.social-container
 		flex-direction: column
 		padding: 20px
+
+	.social
+		width: 40px
+		height: 40px
 
 	.text-container
 		align-items: start

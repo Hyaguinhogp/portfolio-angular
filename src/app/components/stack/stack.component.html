@@ -1,0 +1,14 @@
+<div 
+	(mouseenter)="activeName()"
+	(mouseleave)="desactiveName()"
+	class="stack-container"
+>
+	
+	<div *ngIf="isNameActive" class="stack-name__container">
+		<h2 class="stack-name">{{stackObject.name}}</h2>
+	</div>
+	<app-svg-provider 
+		class="stack-icon" 
+		[path]="'assets/' + stackObject.icon + '.svg'"
+	/>
+</div>
