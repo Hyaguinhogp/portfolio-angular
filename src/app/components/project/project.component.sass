@@ -1,4 +1,6 @@
 @import '../../../styles'
+
+$url-image: url('../../../assets/presentation-image.png')
 	
 .project-container
 	display: flex
@@ -10,6 +12,8 @@
 	height: 250px
 	border-radius: 20px
 	background-color: $gray-02
+	background-position: center
+	background-size: cover
 
 .project-title
 	font-size: $font-03
@@ -42,6 +46,8 @@
 	border: 2px solid $gray-00
 	border-radius: 30px
 	cursor: pointer
+	color: $gray-00
+	text-decoration: none
 
 	app-svg-provider
 		width: 20px

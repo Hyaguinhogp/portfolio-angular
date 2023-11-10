@@ -9,37 +9,41 @@ import { IProject } from 'src/app/app-interfaces';
 export class ProjectsComponent {
   projects: IProject[] = [
     {
-      name: 'NuKenzie',
+      name: 'Pokedex',
+      imageSrc: 'pokedex',
       techs: [
-        { name: 'ReactJs' },
-        { name: 'Styled Components' },
+        { name: 'AngularJs' },
         { name: 'Typescript' },
-        { name: 'Django' },
+        { name: 'RxJs' },
+        { name: 'API' },
       ],
-      githubUrl: 'url',
-      demoUrl: 'url'
+      githubUrl: 'https://github.com/Hyaguinhogp/Pokedex',
+      demoUrl: 'https://pokedex-theta-seven-55.vercel.app/'
     },
     {
       name: 'NuKenzie',
+      imageSrc: 'nukenzie',
       techs: [
         { name: 'ReactJs' },
         { name: 'Styled Components' },
         { name: 'Typescript' },
         { name: 'Django' },
       ],
-      githubUrl: 'url',
-      demoUrl: 'url'
+      githubUrl: 'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-nu-kenzie-Hyaguinhogp',
+      demoUrl: 'https://react-entrega-s1-nu-kenzie-hyaguinhogp.vercel.app/'
     },
     {
-      name: 'NuKenzie',
+      name: 'Cola&Bora',
+      imageSrc: 'colabora',
       techs: [
-        { name: 'ReactJs' },
-        { name: 'Styled Components' },
-        { name: 'Typescript' },
+        { name: 'Python' },
         { name: 'Django' },
+        { name: 'ORM' },
+        { name: 'PostgreSQL' },
       ],
-      githubUrl: 'url',
-      demoUrl: 'url'
+      githubUrl: 'https://github.com/Projeto-Cola-e-Bora/python-projeto-cola-e-bora',
+      demoUrl: 'https://hackmd.io/rYFVo5VmQHSGejR9qpxMlA'
     },
+
   ]
 }

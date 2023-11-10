@@ -5,6 +5,7 @@ export interface IStack {
 
 export interface IProject {
 	name: string
+	imageSrc: string
 	techs: ITech[]
 	githubUrl: string
 	demoUrl: string

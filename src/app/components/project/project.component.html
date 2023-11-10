@@ -1,17 +1,22 @@
 <div class="project-container">
-	<figure class="project-image"></figure>
+	<figure 
+		class="project-image" 
+		[ngStyle]="{
+			'background-image': 'url(../../../assets/' + project.imageSrc + '.png)'
+		}"
+	></figure>
 	<h2 class="project-title">{{project.name}}</h2>
 	<ul class="project-techs">
 		<li *ngFor="let tech of project.techs" class="project-tech">{{tech.name}}</li>
 	</ul>
 	<div class="project-buttons">
-		<div class="project-button">
+		<a href={{project.githubUrl}} target="_blank" class="project-button">
 			<p>Github code</p>
 			<app-svg-provider class="button-icon" [path]="'assets/github-icon.svg'" />
-		</div>
-		<div class="project-button demo">
+		</a>
+		<a href={{project.demoUrl}} target="_blank" class="project-button demo">
 			<p>See demo</p>
 			<app-svg-provider class="button-icon" [path]="'assets/arrow-icon.svg'" />
-		</div>
+		</a>
 	</div>
 </div>
