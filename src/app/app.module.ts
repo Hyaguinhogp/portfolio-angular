@@ -12,6 +12,7 @@ import { StacksComponent } from './components/stacks/stacks.component';
 import { StackComponent } from './components/stack/stack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectComponent } from './components/project/project.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProjectComponent } from './components/project/project.component';
     StackComponent,
     ProjectsComponent,
     ProjectComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

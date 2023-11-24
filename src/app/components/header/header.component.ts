@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent {
-
+  scrollToComponent(componentId: string): void {
+    location.href = `#${componentId}`;
+  }
 }
